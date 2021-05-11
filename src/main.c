@@ -72,7 +72,6 @@ int main(int argn, char* argv[]) {
 		}
 
 	}
-	// set defualt value
     if(strlen(codebookFileName) == 0){
 		strcpy(codebookFileName, "codebook.txt");
 	}
@@ -90,7 +89,7 @@ int main(int argn, char* argv[]) {
 		exit(-1);
 	}
 
-	//getchar();
+
 	return 0;
 }
 
