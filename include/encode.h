@@ -36,17 +36,8 @@ void writeHuffCodebook(FILE* f_out, char* codebook);
 
 void writeHuffEncodeStream(FILE* f_out, char* str, char* codebook);
 
-void freeHuffEncodeTree(HEncodeNode* root);
 
-void buildHuffEncodeTree(const char* str_arr, const double* freq_arr, size_t len, HEncodeNode** q_head);
 
-void buildHuffEncodeTree256(double* freq_arr, size_t len, HEncodeNode** q_head);
-
-void writeHuffEncodeFromFile(FILE* f_in, FILE* f_out, char* codebook);
-
-int huff_encode_ascii_file(const char* filename, const char* codebook_filename, const char* encoded_filename);
-
-void huffCount(double* freq_arr, FILE* f_in, size_t len);
 
 #endif 
 
